@@ -1981,8 +1981,8 @@ iframe {
   position: relative;
   max-width: 262px;
   background-color: #f2f8f9;
-  border-radius: 4px;
-  padding: 32px 24px;
+  border-radius: 5px;
+  padding: 30px 22px;
   margin: 12px;
   text-decoration: none;
   z-index: 0;
@@ -2027,8 +2027,8 @@ iframe {
       content: "";
       position: absolute;
       z-index: -1;
-      top: -10px;
-      right: -10px;
+      top: -16px;
+      right: -16px;
       background: #1abc9c;
       /* background: #fade26; */
       height: 32px;
