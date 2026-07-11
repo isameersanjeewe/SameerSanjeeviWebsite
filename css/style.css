@@ -105,11 +105,33 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0 0 0.5
 @media (max-width: 640px) {
   .nav__links { gap: 1rem; font-size: 0.8rem; }
 }
+@media (max-width: 840px) {
+  .hero__content { grid-template-columns: 1fr; }
+  .hero__media { justify-content: flex-start; }
+}
 
 /* ---- Hero ---- */
 .hero {
   padding: 3rem 6vw 2.5rem;
-  max-width: 900px;
+  max-width: 1100px;
+}
+.hero__content {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+}
+.hero__media {
+  display: flex;
+  justify-content: center;
+}
+.hero__media img {
+  width: min(280px, 100%);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--amber);
+  box-shadow: 0 0 0 6px rgba(79, 209, 197, 0.16);
 }
 .hero h1 {
   font-size: clamp(2.5rem, 7vw, 4.5rem);
