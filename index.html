@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sameer Sanjeevi — AI &amp; Product Management</title>
-  <meta name="description" content="Sameer Sanjeevi — Senior AI/Data Product Manager. Open to Program & Product Manager roles in health-tech, insurtech, and enterprise AI." />
+  <title>Sameer Sanjeevi | AI &amp; Data Product Manager</title>
+  <meta name="description" content="Sameer Sanjeevi, AI and Data Product Manager." />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- pulse strip: signature element, echoes waveform/data-signal, reused as section divider -->
   <div class="pulse" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 
-  <nav class="nav">
-    <a class="nav__brand" href="#top">SS</a>
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__brand" href="#top" aria-label="Back to top">SS</a>
     <div class="nav__links">
       <a href="#about">whoami</a>
       <a href="#work">experience</a>
       <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
       <a href="#personality">off-hours</a>
       <a href="#contact">contact</a>
     </div>
@@ -31,11 +34,11 @@
       <div class="hero__text">
         <p class="eyebrow">$ whoami</p>
         <h1>Sameer Sanjeevi</h1>
-        <p class="hero__role">AI &amp; Data Product Manager — <span class="hero__cursor">Program Manager, too.</span></p>
+        <p class="hero__role">AI &amp; Data Product Manager. <span class="hero__accent">Program Manager, too.</span></p>
         <p class="hero__lede">
-          I turn ambiguous, regulated, high-stakes problems into shipped product. Six-plus years across pharma,
-          Fortune 20 healthcare, and IoT SaaS — currently building GenAI product at BioNTech. I'm as comfortable
-          running a steering committee as I am in a terminal shipping my own tools.
+          I turn messy, high-stakes problems into AI and data products people use. 6+ years shipping in IoT,
+          Fortune 20 healthcare, and pharma. Today I lead GenAI products at BioNTech, from a research chatbot
+          to a social listening platform that reads 50K+ posts a month.
         </p>
         <div class="hero__tags">
           <span>Open to Product Manager roles</span>
@@ -48,57 +51,84 @@
         </div>
       </div>
       <div class="hero__media">
-        <img src="assets/img/portfolio/me.jpg" alt="Sameer Sanjeevi" />
+        <img src="assets/img/portfolio/me.jpg" alt="Portrait of Sameer Sanjeevi" width="640" height="960" fetchpriority="high" />
       </div>
     </div>
+    <ul class="stat-row" aria-label="Highlights">
+      <li><strong>$4M/mo</strong><span>projected savings from a 0-to-1 claims recovery product</span></li>
+      <li><strong>90%</strong><span>citation accuracy on a GenAI research chatbot</span></li>
+      <li><strong>40-60%</strong><span>faster deck builds for 40+ analysts and execs</span></li>
+      <li><strong>6+</strong><span>years leading AI and data products</span></li>
+    </ul>
   </header>
 
   <div class="pulse" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 
-  <main>
+  <main id="main">
     <section class="section" id="about">
       <p class="eyebrow">$ cat about.md</p>
       <h2>The short version</h2>
       <div class="grid-2">
         <p>
-          I'm a product person who builds. Not in the "I can read a Figma file" sense — I ship. My side project,
-          <strong>jobfinder-v3</strong>, is a FastAPI + Claude API app with a Playwright scraper that hunts down
-          roles matching my own criteria, running live on Render. I built it because the tool I wanted didn't exist,
-          which is also how most of my product decisions get made.
+          I've shipped products in IoT, Fortune 20 healthcare, and pharma. The domain changes; the job doesn't:
+          find the real problem, set a measurable bar for done, and get engineering, compliance, and the business
+          shipping against it. Regulated healthcare taught me to put quality gates on AI before launch, not after,
+          and that discipline travels to any product with real users and real stakes.
         </p>
         <p>
-          Professionally, that same instinct has played out at very different scales: co-founding an IoT analytics
-          startup in India, running multi-tenant data platforms inside a Fortune 20 healthcare company, and now
-          shipping GenAI product inside one of the most regulated industries there is — pharma. The common thread
-          is stakeholder trust: getting compliance, engineering, and leadership to agree on what "done" means.
+          I stay hands-on with the technology I manage. I built <strong>jobfinder-v3</strong>, an AI agent that
+          scores 500+ job postings a week with the Claude API, because the tool I wanted didn't exist. It keeps my
+          calls on LLM quality, cost, and evaluation grounded in practice, which makes me a sharper partner to the
+          engineers who build production systems.
         </p>
       </div>
-      <ul class="stat-row">
-        <li><strong>6+</strong><span>years in AI/data product management</span></li>
-        <li><strong>200+</strong><span>customer interviews run at Thermelgy</span></li>
-        <li><strong>3.91</strong><span>GPA, MS MIS — University of Illinois Chicago</span></li>
-        <li><strong>3,000+</strong><span>people I've performed for (more on that below)</span></li>
-      </ul>
     </section>
 
     <section class="section" id="work">
       <p class="eyebrow">$ ls experience/</p>
-      <h2>Where I've built</h2>
+      <h2>Where I've shipped</h2>
       <div class="timeline">
         <article class="role">
-          <div class="role__meta"><span class="role__co">BioNTech</span><span class="role__tag">GenAI · Regulated Pharma</span></div>
-          <p>Contracting as an AI/Data Product Manager, translating GenAI capability into workflows that survive
-            pharma-grade compliance review — where "move fast" has to coexist with "prove it's safe."</p>
+          <div class="role__meta">
+            <span class="role__co">BioNTech</span>
+            <span class="role__via">via Element Technologies</span>
+            <span class="role__tag">Feb 2026 to Present · Remote</span>
+          </div>
+          <p class="role__title">AI Product Manager</p>
+          <ul class="role__list">
+            <li>Launched a 0-to-1 oncology research chatbot on vector search and a knowledge graph: <b>90%</b> citation accuracy on a 100-question test set and <b>30%</b> faster research for commercial analysts.</li>
+            <li>Led Slide Genie, a GenAI tool that builds brand-compliant decks, cutting build time <b>40-60%</b> for <b>40+</b> analysts and executives. Scaled it into a shared API that cut new-product integration from <b>4 weeks to under 1</b>.</li>
+            <li>Own an oncology social listening platform that processes <b>50K+</b> X/Twitter posts a month, with AI tagging of drugs, diseases, sentiment, and account types for Medical Affairs, Competitive Intelligence, and Commercial.</li>
+            <li>Set AI quality gates (<b>85%</b> accuracy target, validated by human review), led the OpenAI vs Azure OpenAI vendor selection, and led design of an AI-driven HEOR dossier platform.</li>
+          </ul>
         </article>
         <article class="role">
-          <div class="role__meta"><span class="role__co">Elevance Health</span><span class="role__tag">Fortune 20 · Data Platforms</span></div>
-          <p>Owned multi-tenant data platforms serving internal business lines, aligning stakeholders across
-            engineering, compliance, and business teams at enterprise scale.</p>
+          <div class="role__meta">
+            <span class="role__co">Elevance Health</span>
+            <span class="role__via">Fortune 20</span>
+            <span class="role__tag">Jan 2023 to Jan 2026 · Chicago, IL</span>
+          </div>
+          <p class="role__title">Product Owner, Carelon Data Platform</p>
+          <ul class="role__list">
+            <li>Led a claims recovery analytics product from 0 to 1 and commercialized it to external health plans: <b>~$4M a month</b> in projected savings.</li>
+            <li>Owned secure data supply for <b>3</b> payment integrity products (claims anomaly, member anomaly, coordination of benefits), including PHI tokenization and de-identification.</li>
+            <li>Ran delivery across <b>3</b> agile squads (data engineering, cloud, security) on a multi-tenant platform spanning Member, Provider, and Pharmacy data, planning <b>4</b> PIs a year.</li>
+            <li>Launched secure cloud file transfer for health plan onboarding, production-ready in <b>30 days</b>, and an AI-assisted SQL accelerator that cut data delivery time <b>50%</b>.</li>
+          </ul>
+          <p class="role__note">Earlier: Product Analyst intern (Jun to Aug 2022). Wrote the team's product playbook (OKRs, SAFe) and Tableau delivery dashboards across 6 scrum teams.</p>
         </article>
         <article class="role">
-          <div class="role__meta"><span class="role__co">Thermelgy</span><span class="role__tag">Co-founder · IoT Analytics SaaS</span></div>
-          <p>Co-founded an IoT platform monitoring HVAC energy usage for remote, real-time equipment control.
-            Ran 200+ customer interviews, built the product roadmap, and led an 8-person team from zero to shipped.</p>
+          <div class="role__meta">
+            <span class="role__co">Thermelgy</span>
+            <span class="role__via">Co-founder · IoT analytics for HVAC</span>
+            <span class="role__tag">Jul 2018 to Apr 2021 · Chennai, India</span>
+          </div>
+          <p class="role__title">Founding Product Manager</p>
+          <ul class="role__list">
+            <li>Ran <b>200+</b> customer interviews to find product-market fit and set the roadmap.</li>
+            <li>Led an <b>8-person</b> engineering team from 0 to 1, saving <b>$20K</b> through tighter prioritization.</li>
+            <li>Delivered analytics dashboards to <b>15+</b> enterprise customers; usage analytics raised key feature adoption <b>20%</b>.</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -107,19 +137,15 @@
 
     <section class="section" id="projects">
       <p class="eyebrow">$ ls projects/</p>
-      <h2>Things I've shipped myself</h2>
+      <h2>Things I build on my own time</h2>
       <div class="card-grid">
-        <article class="card">
+        <article class="card card--featured">
           <h3>jobfinder-v3</h3>
-          <p class="card__stack">FastAPI · Claude API · Playwright · Render</p>
-          <p>A personal AI job-matching app: it scrapes listings, scores them against my own criteria using the
-            Claude API, and surfaces the ones worth my time. Built solo, deployed, and still running.</p>
-        </article>
-        <article class="card">
-          <h3>Thermelgy</h3>
-          <p class="card__stack">IoT · Edge Devices · BI Dashboards</p>
-          <p>Energy-as-a-service platform for HVAC operators — edge devices feed a BI layer that lets facilities
-            teams monitor and remotely control equipment, driving direct and indirect energy savings.</p>
+          <p class="card__stack">FastAPI · Claude API · Playwright · Render · Vercel</p>
+          <p class="card__quote">"I don't search for jobs. I built an AI agent that does."</p>
+          <p>Scrapes job postings, scores <b>500+</b> a week against my own criteria with the Claude API, and
+            surfaces the few worth my time. Built solo, deployed, and in daily use.</p>
+          <a class="card__link" href="https://jobfinder-v3.vercel.app/" target="_blank" rel="noopener">Open the live app ↗</a>
         </article>
         <article class="card">
           <h3>CloudPulze</h3>
@@ -130,43 +156,67 @@
       </div>
     </section>
 
+    <section class="section" id="skills">
+      <p class="eyebrow">$ cat skills.yml</p>
+      <h2>What I work with</h2>
+      <dl class="skills">
+        <div><dt>Product</dt><dd>Strategy, roadmaps, requirements, KPIs, launch, vendor evaluation, stakeholder management</dd></div>
+        <div><dt>AI / ML</dt><dd>RAG, vector databases, knowledge graphs, LLM evaluation, LLM orchestration, NLP, prompt engineering</dd></div>
+        <div><dt>Data &amp; compliance</dt><dd>SQL, data governance, data quality, HIPAA/PHI, tokenization, A/B testing</dd></div>
+        <div><dt>Tools</dt><dd>AWS, GCP, Azure OpenAI, JIRA, Confluence, Aha!, Tableau, Looker, Figma, Postman, Python</dd></div>
+      </dl>
+      <div class="edu">
+        <div>
+          <h3>Education</h3>
+          <p><strong>M.S. Management Information Systems</strong>, University of Illinois Chicago, 2022 (3.91 GPA)</p>
+          <p><strong>B.Tech. Electrical and Electronics Engineering</strong>, Amrita Vishwa Vidyapeetham, 2018</p>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <p>CSPO · CSM · Pragmatic Institute PMC-I and PMC-II</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="personality">
       <p class="eyebrow">$ cat personality.txt</p>
       <h2>The part that doesn't fit on a résumé</h2>
       <div class="grid-2">
         <div class="feature">
           <h3>Beatboxer, 9 years</h3>
-          <p>I've performed for corporate events and kids' shows in front of crowds north of 3,000. It's taught me
-            more about reading a room and holding attention than any stakeholder workshop — turns out both jobs are
-            about rhythm, timing, and knowing when to drop out and let someone else carry the beat.</p>
+          <p>I've performed at corporate events and kids' shows for crowds of 3,000+. It's taught me more about
+            reading a room and holding attention than any stakeholder workshop. Both jobs come down to rhythm,
+            timing, and knowing when to drop out and let someone else carry the beat.</p>
         </div>
         <div class="feature">
           <h3>South Indian home cook</h3>
-          <p>I cook the real stuff — the kind with a spice sequence that matters. Cooking and product management
+          <p>I cook the real stuff, the kind where the spice sequence matters. Cooking and product management
             share a discipline: both punish shortcuts and reward getting the fundamentals right before you improvise.</p>
         </div>
       </div>
-      <p class="personality__close">I'm also a sustainable-living advocate — small habits, compounding effects.
-        Same philosophy I bring to product: the unglamorous, consistent work is usually what actually moves the metric.</p>
+      <p class="personality__close">I'm also a sustainable-living advocate: small habits, compounding effects.
+        Same philosophy I bring to product. The unglamorous, consistent work is usually what moves the metric.</p>
     </section>
 
     <section class="section section--cta" id="contact">
       <p class="eyebrow">$ ./connect.sh</p>
-      <h2>Open to Product &amp; Program Manager roles</h2>
+      <h2>Open to Senior Product &amp; Program Manager roles</h2>
       <p class="contact__lede">
-        Series B–D health-tech, insurtech, and enterprise AI — if you're building something that needs a PM who
-        can both align a room full of stakeholders and read your codebase, let's talk.
+        AI, data platform, and technical product roles, remote or in the NYC/NJ area. If you need someone who can
+        take an AI product from idea to a measurable launch and bring engineering, compliance, and the business
+        along, let's talk.
       </p>
+      <p class="contact__email"><a href="mailto:sameersanjeevi.99@gmail.com">sameersanjeevi.99@gmail.com</a></p>
       <div class="contact__links">
-        <a href="mailto:hello@sameersanjeevi.me">Email</a>
         <a href="https://www.linkedin.com/in/sameersanjeevi/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/isameersanjeewe/" target="_blank" rel="noopener">GitHub</a>
+        <a href="assets/Sameer_Sanjeevi_Resume.pdf" download="Sameer_Sanjeevi_Resume.pdf">Download résumé</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Jersey City, NJ · Built &amp; deployed by Sameer · <a href="https://github.com/isameersanjeewe/" target="_blank" rel="noopener">source on GitHub</a></p>
+    <p>Somerville, NJ · Built &amp; deployed by Sameer · <a href="https://github.com/isameersanjeewe/SameerSanjeeviWebsite" target="_blank" rel="noopener">source on GitHub</a></p>
   </footer>
 
   <script src="js/script.js"></script>
