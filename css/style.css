@@ -28,6 +28,24 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
+/* Light theme: opt-in via the nav toggle (dark stays the default first impression).
+   Accent values are darkened so text stays above 4.5:1 contrast on warm paper. */
+:root[data-theme="light"] {
+  --ink: #F7F4EE;
+  --ink-raised: #FFFFFF;
+  --paper: #1A1F22;
+  --muted: #5B6467;
+  --amber: #A65F0D;
+  --cyan: #0E7A71;
+  --line: #E2DDD3;
+  --dots: #C4BCAD;
+  --amber-hover: #8A4E0A;
+  --on-accent: #FFFFFF;
+  --accent-soft: rgba(14, 122, 113, 0.14);
+  --featured-border: rgba(166, 95, 13, 0.4);
+  --nav-bg: rgba(247, 244, 238, 0.9);
+}
+
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -130,6 +148,24 @@ section[id], header[id] { scroll-margin-top: 5rem; }
   white-space: nowrap;
 }
 .nav__resume:hover { background: var(--amber); color: var(--on-accent); }
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--paper);
+  cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--amber); color: var(--amber); }
+.theme-toggle svg { width: 1.05rem; height: 1.05rem; }
+.theme-toggle .icon-moon { display: none; }
+:root[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
 .nav__brand {
   font-family: var(--font-display);
   font-weight: 700;
