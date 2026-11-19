@@ -10,8 +10,12 @@ Personal portfolio for Sameer Sanjeevi, AI & Data Product Manager. A single stat
 - **Skills, education, certifications**, an off-hours section (beatboxing, cooking, sustainability), and contact.
 
 ## Design system
-Dark ink background, amber/cyan accents, Space Grotesk + Inter + JetBrains Mono. The "pulse strip" motif nods to
-audio waveforms and data signal (beatboxer + builder). Tokens are documented at the top of `css/style.css`.
+- Dark ink background, amber/cyan accents, Space Grotesk + Inter. JetBrains Mono only for dates and tech stacks.
+- The "pulse strip" motif nods to audio waveforms and data signal (beatboxer + builder).
+- Section labels read like a menu, a nod to cooking: Today's special, The story, Mains, Sides, The spice rack,
+  Off the menu, Reservations. Headings stay plain so recruiters can scan.
+- Light theme via the nav toggle; dark is the default. Tokens for both live at the top of `css/style.css`.
+- Sticky nav with a Résumé button. Bump the `?v=` on the CSS/JS links in `index.html` when you change them.
 
 ## File map
 ```

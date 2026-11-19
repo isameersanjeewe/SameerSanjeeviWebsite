@@ -376,6 +376,7 @@ section[id], header[id] { scroll-margin-top: 5rem; }
 
 /* ---- Personality ---- */
 .feature h3 { color: var(--amber); font-size: 1.15rem; }
+.feature__link { font-family: var(--font-display); font-weight: 600; font-size: 0.92rem; }
 .personality__close { max-width: 70ch; margin-top: 2rem; color: var(--muted); font-style: italic; }
 
 /* ---- Contact / CTA ---- */
