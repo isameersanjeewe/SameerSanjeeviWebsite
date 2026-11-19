@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.setAttribute('aria-pressed', String(light));
       toggle.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
     }
-    if (themeMeta) themeMeta.setAttribute('content', light ? '#F7F4EE' : '#0F1417');
+    if (themeMeta) themeMeta.setAttribute('content', light ? '#EEF2EC' : '#0F1417');
   };
   apply(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
   if (toggle) {

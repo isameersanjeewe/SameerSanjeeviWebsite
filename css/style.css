@@ -29,21 +29,22 @@
 }
 
 /* Light theme: opt-in via the nav toggle (dark stays the default first impression).
-   Accent values are darkened so text stays above 4.5:1 contrast on warm paper. */
+   Accents are deep green and indigo so text stays above 4.5:1 contrast on sage paper. */
 :root[data-theme="light"] {
-  --ink: #F7F4EE;
+  /* "Curry leaf & indigo": cool sage paper, green primary, indigo secondary */
+  --ink: #EEF2EC;
   --ink-raised: #FFFFFF;
-  --paper: #1A1F22;
-  --muted: #5B6467;
-  --amber: #A65F0D;
-  --cyan: #0E7A71;
-  --line: #E2DDD3;
-  --dots: #C4BCAD;
-  --amber-hover: #8A4E0A;
+  --paper: #15201A;
+  --muted: #51605A;
+  --amber: #1E6B47;
+  --cyan: #33409A;
+  --line: #D6DED3;
+  --dots: #B3C0B0;
+  --amber-hover: #155236;
   --on-accent: #FFFFFF;
-  --accent-soft: rgba(14, 122, 113, 0.14);
-  --featured-border: rgba(166, 95, 13, 0.4);
-  --nav-bg: rgba(247, 244, 238, 0.9);
+  --accent-soft: rgba(51, 64, 154, 0.14);
+  --featured-border: rgba(30, 107, 71, 0.4);
+  --nav-bg: rgba(238, 242, 236, 0.9);
 }
 
 * { box-sizing: border-box; }
