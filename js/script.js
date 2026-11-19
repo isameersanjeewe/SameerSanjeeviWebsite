@@ -1,4 +1,4 @@
-// Intentionally minimal — this is a static, fast-loading page.
+// Intentionally minimal: this is a static, fast-loading page.
 // Smooth-scroll is handled via CSS (scroll-behavior). No blocking JS on load.
 
 document.addEventListener('DOMContentLoaded', () => {

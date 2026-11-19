@@ -1,32 +1,30 @@
 # sameersanjeevi.me
 
-Personal portfolio — rebuilt from the old Bootstrap template into a single, fast, static page.
+Personal portfolio for Sameer Sanjeevi, AI & Data Product Manager. A single static page: no framework, no build step.
 
-## What changed
-- Replaced lorem-ipsum project modals and dead contact form with real content: BioNTech, Elevance Health,
-  Thermelgy, jobfinder-v3, CloudPulze, and a personality section (beatboxing, cooking, sustainability).
-- Repositioned copy around **Product Manager and Program Manager** roles, with an explicit H-1B transfer note.
-- New design system: dark ink background, amber/cyan accents, Space Grotesk + Inter + JetBrains Mono, and a
-  signature "pulse strip" motif (nods to both audio waveforms and data signal — beatboxer + builder).
-- Dropped the non-functional SB Forms contact form for direct mailto/LinkedIn/GitHub links.
-- No framework, no build step — plain HTML/CSS/JS, so it stays fast and trivially deployable.
+## Content
+- **Hero:** AI & Data Product Manager (Program Manager in scope), proof strip of headline metrics, H-1B transfer note.
+- **About:** skills-led positioning across IoT, Fortune 20 healthcare, and pharma.
+- **Experience:** BioNTech (via Element Technologies), Elevance Health, Thermelgy, with metric-backed bullets.
+- **Projects:** jobfinder-v3 (live at https://jobfinder-v3.vercel.app/) and CloudPulze.
+- **Skills, education, certifications**, an off-hours section (beatboxing, cooking, sustainability), and contact.
+
+## Design system
+Dark ink background, amber/cyan accents, Space Grotesk + Inter + JetBrains Mono. The "pulse strip" motif nods to
+audio waveforms and data signal (beatboxer + builder). Tokens are documented at the top of `css/style.css`.
 
 ## File map
 ```
-index.html              single-page site
-css/style.css           design tokens + all styling
-js/script.js            minimal — respects prefers-reduced-motion
-.github/workflows/deploy.yml   auto-deploys to GitHub Pages on every push to main
+index.html                     single-page site, meta tags, JSON-LD
+css/style.css                  design tokens and all styling
+js/script.js                   minimal, respects prefers-reduced-motion
+assets/Sameer_Sanjeevi_Resume.pdf
+assets/img/portfolio/me.jpg    640x960 portrait (also the social preview image)
+.github/workflows/deploy.yml   deploys to GitHub Pages on every push to main
+CNAME                          custom domain
 ```
 
-## Before you push
-1. Copy your existing `assets/` folder (avatar photo, resume PDF, favicon) into this folder — image paths
-   referenced in `index.html` assume `assets/img/portfolio/...` and `assets/Sameer_Sanjeevi_Resume.pdf`.
-2. Update the `mailto:` address in `index.html` to your real email.
-3. In your repo settings: **Settings → Pages → Source → GitHub Actions**. That's the only manual step —
-   after that, every push to `main` redeploys automatically.
-
-## Using this as GitHub Copilot context
-Keep this README and the design-token comment block at the top of `css/style.css` — they document intent
-(why amber/cyan, why the pulse motif) so Copilot's suggestions stay on-brand instead of drifting toward
-generic defaults.
+## Updating
+- **Resume:** replace `assets/Sameer_Sanjeevi_Resume.pdf` and keep the filename so existing links keep working.
+- **Local preview:** `python3 -m http.server` in this folder, then open http://localhost:8000.
+- **Copy rules:** short, direct, metric-backed. No em dashes.
